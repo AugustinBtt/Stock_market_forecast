@@ -1,0 +1,10 @@
+# This program is trying to predict the stock price of the most mentionned companies over the last 24h in the subreddit "Wallstreetbets"
+# the data is collected on the website: https://swaggystocks.com/
+
+# In this code a dataframe is created with the stock price close date as index, the following data is added: close price, daily income, daily revenue, positive comments percentage, negative comments percentage, and comments volume.
+# the financial data comes from: https://site.financialmodelingprep.com/
+
+# It assumes that social sentiment can be used to predict a stock price. However after many tests and tweakings, it became apparent that the stock price influences the social trends and not the other way around. Thus making this data ineffective at predicting the stock price.
+# However this model could be used to predict the social trend on reddit, using the stock price as a feature and the comments sentiment and volume as target variables.
+
+# Enjoy playing with it!
