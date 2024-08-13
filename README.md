@@ -2,6 +2,9 @@ I encountered many projects claiming they could predict stock prices, but most w
 
 My sources: 
 https://swaggystocks.com/ 
+
 https://site.financialmodelingprep.com/
+
 https://explodingtopics.com/
+
 OpenAI API
