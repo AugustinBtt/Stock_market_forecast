@@ -1,1 +1,11 @@
-about 
+This program identifies the most trending topics by industry, using data from the website https://explodingtopics.com/. The concept is that an increase in search volume and interest for a product could predict a rise in sales for the associated company, potentially leading to an increase in its share price.
+
+Unlike my other approach, which is based on social sentiment reacting to stock prices, this method aims to be ahead of the market by identifying trends before they affect stock prices.
+
+How it works:
+
+    We gather topics that have recently gained significant attention and filter them by brands.
+    We then prompt ChatGPT to identify the parent company of each product, determine if the company is publicly traded, and provide the stock ticker.
+    Next, we use the API from https://financialmodelingprep.com/ to retrieve the stock price and revenue data. The revenue is adjusted for inflation, and daily values are generated.
+
+The dataframe is created with the stock price close date as index, the following data is added: close price, daily income, daily revenue, volume (which measures the interest of that particular topic).
